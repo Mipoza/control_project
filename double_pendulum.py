@@ -56,7 +56,6 @@ def christoffel(g, inv_g):
 def F_gamma_u(X,gamma,U,inv_g):
     global x
     global y
-
     Y=[]
 
     for k in range(2,4):
@@ -83,7 +82,7 @@ f_l = [lambdify([x,y], f[0]), lambdify([x,y], f[1]), lambdify([x,y], f[2])] #Con
 
 T = 5 #Time horizon
 D_f = 2*3.1415 #[-D_f,D_f]^2 is a square domain center at 0 where f is defined
-X_0 = [0.2,0.2,0,0] #initial condition as [x_1,x_2,dx_1/dt,dx_2/dt] 
+X_0 = [1.57,0.2,0,0] #initial condition as [x_1,x_2,dx_1/dt,dx_2/dt] 
 
 # g, inv_g = metric(f)
 
